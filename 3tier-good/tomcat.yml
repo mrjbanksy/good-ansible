@@ -1,0 +1,6 @@
+---
+- name: install and configure tomcat
+  hosts: apps
+  become: true
+  roles:
+   - tomcat

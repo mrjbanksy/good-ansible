@@ -1,0 +1,6 @@
+---
+- name: Configure all hosts with appropriate yum repos
+  hosts: all
+  become: true
+  roles:
+    - configuration

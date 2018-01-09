@@ -1,0 +1,6 @@
+---
+- name: install and configure postgres
+  hosts: appdbs
+  become: true
+  roles:
+   - postgres

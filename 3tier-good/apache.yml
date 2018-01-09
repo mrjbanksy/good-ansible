@@ -1,0 +1,6 @@
+---
+- name: install and configure apache
+  hosts: apps
+  become: true
+  roles:
+    - apache
