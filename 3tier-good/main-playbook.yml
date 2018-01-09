@@ -1,6 +1,6 @@
 ---
-- import_playbook: configuration.yml
-- import_playbook: haproxy.yml
-- import_playbook: tomcat.yml
-- import_playbook: postgres.yml
-- import_playbook: apache.yml
+- import_playbook: helper_playbooks/configuration.yml
+- import_playbook: helper_playbooks/haproxy.yml
+- import_playbook: helper_playbooks/tomcat.yml
+- import_playbook: helper_playbooks/postgres.yml
+- import_playbook: helper_playbooks/apache.yml
