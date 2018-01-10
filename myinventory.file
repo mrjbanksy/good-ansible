@@ -1,15 +1,3 @@
-[3tierapp:vars]
-
-###########################################################################
-### Ansible Vars
-###########################################################################
-timeout=60
-ansible_become=yes
-ansible_ssh_user=ec2-user
-ansible_ssh_private_key_file="~/.ssh/85ddkey.pem"
-ansible_ssh_common_args="-o StrictHostKeyChecking=no"
-GUID=85dd
-
 [3tierapp:children]
 frontends
 apps
@@ -19,17 +7,17 @@ support
 
 [frontends]
 ## These are the frontends
-frontend1.85dd.internal ansible_ssh_host=frontend1.85dd.example.opentlc.com
+frontend1.85dd.internal
 
 [apps]
 ## These are the apps
-app1.85dd.internal ansible_ssh_host=app1.85dd.example.opentlc.com
-app2.85dd.internal ansible_ssh_host=app2.85dd.example.opentlc.com
+app1.85dd.internal
+app2.85dd.internal
 
 [appdbs]
 ## These are the appdbs
-appdb1.85dd.internal ansible_ssh_host=appdb1.85dd.example.opentlc.com
+appdb1.85dd.internal
 
 ## These are the support
 [support]
-support1.85dd.internal ansible_ssh_host=support1.85dd.example.opentlc.com
+support1.85dd.internal
