@@ -2,3 +2,4 @@
 */.pem
 *.repo
 *.retry
+vault_pass
