@@ -3,4 +3,3 @@
 - import_playbook: helper_playbooks/haproxy.yml
 - import_playbook: helper_playbooks/tomcat.yml
 - import_playbook: helper_playbooks/postgres.yml
-- import_playbook: helper_playbooks/apache.yml
